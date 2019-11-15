@@ -46,7 +46,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         if(!(cell.inputLabel.text == "X" || cell.inputLabel.text == "O")){
             
             var player = String()
-            if(evenOdd == false){
+            if(!evenOdd){
                 cell.inputLabel.text="X"
                 evenOdd = true
                 player = "X"
